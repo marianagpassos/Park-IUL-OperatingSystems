@@ -29,13 +29,13 @@ Evolution of the architecture with advanced communication mechanisms.
 
 ## Features
 
-- ✅ Registration of vehicle entries and exits with license plate validation by country
-- ✅ Automatic archiving of completed records in monthly files
-- ✅ Parking duration calculation
-- ✅ Detailed statistical reports in HTML format
-- ✅ Interactive command-line menu interface
-- ✅ Simulation of multiple concurrent clients
-- ✅ Robust synchronization with System V semaphores
+- [X] Registration of vehicle entries and exits with license plate validation by country
+- [X] Automatic archiving of completed records in monthly files
+- [X] Parking duration calculation
+- [X] Detailed statistical reports in HTML format
+- [X] Interactive command-line menu interface
+- [X] Simulation of multiple concurrent clients
+- [X] Robust synchronization with System V semaphores
 
 ## Technologies Used
 
@@ -54,19 +54,31 @@ Evolution of the architecture with advanced communication mechanisms.
 1. **Navigate to the project directory:**
     ```bash
    cd parte-3
-
+    ```
 
 ## Compile the programs
-   ```bash
-   gcc -o servidor servidor.c -lrt -lpthread
+    ```shell
+    gcc -o servidor servidor.c -lrt -lpthread
+    gcc -o cliente cliente.c -lrt -lpthread
+    ```
+
+## Start the server (Terminal 1 - Creates a parking lot with 10 spaces):
+   ```shell
+    ./servidor 10
    ```
-   gcc -o cliente cliente.c -lrt -lpthread
-
-
-## Start the server (Terminal 1):
-   
-   ./servidor 10  # Creates a parking lot with 10 spaces
 
 ## Start one or more clients (Terminal 2, 3, ...):
-   ./cliente
+    ```bash
+     ./cliente
+    ```
 
+
+
+> [!NOTE]
+> This project was developed for the Operating Systems course at ISCTE-IUL. The code follows the specifications provided in the assignment and was validated using the official validator scripts.
+
+> [!TIP]
+> Always run the validator scripts after making changes to ensure your implementation passes all tests. Use the `-d` flag to see debug messages and identify issues more easily.
+
+> [!IMPORTANT]
+> The IPC_KEY in defines.h must be changed to your student number. Failure to do so may cause conflicts with other students' running processes on the Tigre server.
