@@ -1,7 +1,7 @@
 /****************************************************************************************
  ** ISCTE-IUL: Trabalho prático 2 de Sistemas Operativos 2024/2025, Enunciado Versão 4+
  **
- **  Aluno: Nº:122660       Nome: Mariana Passos
+ **  Aluno: Nº:       Nome: Mariana Passos
  ** Nome do Módulo: servidor.c
  ** Descrição/Explicação do Módulo:
  **
