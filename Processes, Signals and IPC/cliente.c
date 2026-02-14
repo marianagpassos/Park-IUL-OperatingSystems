@@ -1,7 +1,7 @@
 /****************************************************************************************
  ** ISCTE-IUL: Trabalho prático 3 de Sistemas Operativos 2024/2025, Enunciado Versão 1+
  **
- ** Aluno: Nº:122660       Nome: Mariana Passos
+ ** Aluno: Nº:      Nome: 
  ** Nome do Módulo: cliente.c
  ** Descrição/Explicação do Módulo:
  **
