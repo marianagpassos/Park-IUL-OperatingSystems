@@ -57,10 +57,10 @@ Evolution of the architecture with advanced communication mechanisms.
     ```
 
 ## Compile the programs
-    ```shell
+    
     gcc -o servidor servidor.c -lrt -lpthread
     gcc -o cliente cliente.c -lrt -lpthread
-    ```
+    
 
 ## Start the server (Terminal 1 - Creates a parking lot with 10 spaces):
    ```shell
@@ -68,9 +68,7 @@ Evolution of the architecture with advanced communication mechanisms.
    ```
 
 ## Start one or more clients (Terminal 2, 3, ...):
-    ```bash
      ./cliente
-    ```
 
 
 
