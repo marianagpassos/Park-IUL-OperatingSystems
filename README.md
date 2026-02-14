@@ -76,7 +76,7 @@ Evolution of the architecture with advanced communication mechanisms.
 > This project was developed for the Operating Systems course at ISCTE-IUL. The code follows the specifications provided in the assignment and was validated using the official validator scripts.
 
 > [!TIP]
-> Always run the validator scripts after making changes to ensure your implementation passes all tests. Use the `-d` flag to see debug messages and identify issues more easily.
+> To avoid manually compiling each file, use the `park.sh` script. It automatically manages the compilation, creation of necessary folders, and cleanup of temporary files.
 
 > [!IMPORTANT]
 > The IPC_KEY in defines.h must be changed to your student number. Failure to do so may cause conflicts with other students' running processes on the Tigre server.
