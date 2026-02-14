@@ -2,7 +2,7 @@
 Parking management system developed in Bash and C for the Operating Systems course (ISCTE-IUL, 2024/2025). This project implements an automated 24/7 parking platform, covering concepts such as scripting, concurrent processes, signals, named pipes (FIFOs), shared memory, semaphores, and System V message queues.
 This project demonstrates the practical application of fundamental Operating Systems concepts, divided into three distinct parts that evolve in complexity:
 
-### Part 1 – Bash Scripting
+### Shell Script (Bash) - Part 1
 Administration and management of the parking database through shell scripts.  
 **Key Concepts:**
 - File and string manipulation
@@ -10,7 +10,7 @@ Administration and management of the parking database through shell scripts.
 - Task scheduling with `cron`
 - Generation of statistical reports in HTML
 
-### Part 2 – Processes and Signals
+### Processes and Signals - Part 2
 Implementation of a concurrent client-server architecture in C.  
 **Key Concepts:**
 - Process creation with `fork()` and `wait()`
@@ -18,7 +18,7 @@ Implementation of a concurrent client-server architecture in C.
 - Named pipes (FIFOs) for message exchange
 - Basic concurrency handling
 
-### Part 3 – System V IPC
+### Processes, Signals and IPC - Part 3
 Evolution of the architecture with advanced communication mechanisms.  
 **Key Concepts:**
 - Shared Memory (`shmget`, `shmat`, `shmdt`)
@@ -72,11 +72,18 @@ Evolution of the architecture with advanced communication mechanisms.
 
 
 
+
+>
+>
+> [!IMPORTANT]
+> - **Macros - Authorship and Usage Restrictions**
+> The logging and visual formatting macros used in the scripts (`so_success`, `so_error`, etc.) **were provided by the teaching team** (Author: Prof. Carlos Coutinho). This code does not belong to the student and was included in the repository strictly to ensure the executability of the project. **It should not be modified**, as it ensures that the output follows the required standard for automatic evaluation.
+>
+>  - The IPC_KEY in defines.h must be changed to your student number. Failure to do so may cause conflicts with other students' running processes on the Tigre server.
+
 > [!NOTE]
 > This project was developed for the Operating Systems course at ISCTE-IUL. The code follows the specifications provided in the assignment and was validated using the official validator scripts.
 
 > [!TIP]
 > To avoid manually compiling each file, use the `park.sh` script. It automatically manages the compilation, creation of necessary folders, and cleanup of temporary files.
 
-> [!IMPORTANT]
-> The IPC_KEY in defines.h must be changed to your student number. Failure to do so may cause conflicts with other students' running processes on the Tigre server.
