@@ -48,27 +48,25 @@ Evolution of the architecture with advanced communication mechanisms.
 | **Others** | Binary files, dynamic memory allocation, timestamp formatting   |
 
 
-## 📁 Repository Structure
-Park-IUL-OperatingSystems
-├── Shell Script/ # Bash scripts
-├── Processes and Signals/ # C code (Processes and Signals)
-├── Processes, Signals and IPC/ # C code (System V IPC)
-└── README.md # This file
 
 ## How to Run (Example for Part 3):
 
 1. **Navigate to the project directory:**
-   ```bash
+    ```bash
    cd parte-3
 
-## Compile the programs:
 
-gcc -o servidor servidor.c -lrt -lpthread
-gcc -o cliente cliente.c -lrt -lpthread
+## Compile the programs
+   ```bash
+   gcc -o servidor servidor.c -lrt -lpthread
+   ```
+   gcc -o cliente cliente.c -lrt -lpthread
+
 
 ## Start the server (Terminal 1):
-./servidor 10  # Creates a parking lot with 10 spaces
+   
+   ./servidor 10  # Creates a parking lot with 10 spaces
 
 ## Start one or more clients (Terminal 2, 3, ...):
-./cliente
+   ./cliente
 
